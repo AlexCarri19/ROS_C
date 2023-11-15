@@ -1,0 +1,8 @@
+<?xml version="1.0" ?>
+<launch>
+    <rosparam file = "$(find minichallenge3)/config/path.yaml" command = "load"  /> 
+    <node name="controller" pkg="minichallenge3" type="controller.py" output="screen" >
+    </node>
+    <node name="generador" pkg="minichallenge3" type="pose.py" output="screen">
+    </node>
+</launch>

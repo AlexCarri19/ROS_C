@@ -1,0 +1,7 @@
+<?xml version="1.0" ?>
+<launch>
+    <node name="tracker" pkg="minichallenge4" type="tracker_from_topic2.py" output="screen">
+    </node>
+    <node name="controller" pkg="minichallenge4" type="controller.py" output="screen" >
+    </node>
+</launch>
